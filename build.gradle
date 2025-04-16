@@ -21,13 +21,13 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 34
 
     defaultConfig {
         multiDexEnabled true
         applicationId "com.sanbot.capaBot"
-        minSdkVersion 19
-        targetSdkVersion 30
+        minSdkVersion 23
+        targetSdkVersion 34
         versionCode 20201220
         versionName "4.1.1" //change also proprieties.txt in Hari folder
 
@@ -93,8 +93,7 @@ dependencies {
 
     //sanbotsuff
     implementation(name: 'SanbotOpenSdk_2.0.1.10', ext: 'aar')
-    //implementation 'com.google.code.gson:gson:2.8.2'
-    //implementation files('libs/gson-2.2.4.jar')
+    implementation 'com.google.code.gson:gson:2.10.1'
 
     //icalendar 4 java
     implementation 'org.mnode.ical4j:ical4j:2.2.4'
